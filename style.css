@@ -308,6 +308,20 @@ form {
     background-color: #f9f9f9; /* Cor de fundo leve para o formulário */
     border-radius: 10px;
 }
+.input-padrao {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
 
 @media screen and (max-width: 480px) {
     .caixa,
@@ -367,17 +381,5 @@ form {
 
 
 
-.input-padrao {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-}
 
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-}
 
