@@ -1,21 +1,21 @@
 /* Estilos gerais */
-body {
+ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    /* width: max-content; */
+} 
 
 /* Header */
-header {
+/* header {
     background: #FFFFFF;
     padding: 20px 0;
     width: 100%;
-}
+} */
 
 .caixa {
     position: relative;
-    max-width: 940px;
     margin: 0 auto;
     width: 100%;
 }
@@ -54,7 +54,6 @@ main {
     padding: 3em 0;
     background: #FEFEFE;
     width: 100%;
-    max-width: 940px;
     margin: 0 auto;
 }
 
@@ -257,78 +256,15 @@ table {
     margin: 20px 0 40px;
 }
 
-thead {
-    background: #555555;
-    color: white;
-    font-weight: bold;
-}
 
-td, th {
-    border: 1px solid #000000;
-    padding: 8px 15px;
-}
 
 /* Footer */
-footer {
+.rodape{
     text-align: center;
-    background: url("logo-branco.png");
     padding: 40px 0;
     background-color: #000000;
 }
 
-.copyright {
-    color: #FFFFFF;
-    font-size: 13px;
-    margin: 20px 0 0;
-}
-
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    .caixa, .principal, .produtos, .conteudo-beneficios, .mapa-conteudo, footer {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .produtos li {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    header {
-        padding: 10px 0;
-        width: 100%;
-        width:max-content;
-    }
-    .caixa, .principal, .produtos, .conteudo-beneficios, .mapa-conteudo, footer {
-        width: 100%;
-        padding: 0 10px;
-        width:max-content;
-    }
-
-    .caixa, .principal, .produtos, .conteudo-beneficios, .mapa-conteudo, footer {
-        width: 100%;
-        padding: 0 10px;
-        width:max-content;
-    }
-
-    .produtos li {
-        width: 100%;
-        margin-bottom: 20px;
-        width:max-content;
-    }
-
-    .produtos img {
-        width: 100%;
-        height: auto;
-        width:max-content;
-    }
-
-    .beneficios, .conteudo-beneficios {
-        width: 100%;
-        width:max-content;
-    }
-}
 
 .whatsapp-btn-fixed {
     position: fixed;
@@ -353,3 +289,110 @@ footer {
     height: 50px;
     border-radius: 50%;
 }
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 468px) {
+    /* Ajustes gerais */
+    body {
+        padding: 10px;
+        font-size: 16px;
+        width: max-content;
+    }
+
+    /* Header */
+    nav {
+        position: relative;
+        top: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    /* Seção principal */
+    .principal {
+        padding: 2em 1em;
+        max-width: 100%;
+    }
+
+    .titulo-principal {
+        font-size: 1.5em;
+    }
+
+    /* Produtos */
+    .produtos li {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .produtos h2 {
+        font-size: 24px;
+    }
+
+    /* Benefícios */
+    .conteudo-beneficios {
+        width: 90%;
+    }
+
+    .lista-beneficios {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .imagem-beneficios {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Mapa */
+    .mapa-conteudo {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .mapa p {
+        font-size: 16px;
+    }
+
+    /* Vídeo */
+    .video {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* Formulário */
+    form {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .input-padrao,
+    textarea {
+        width: 100%;
+    }
+
+    .enviar {
+        width: 60%;
+    }
+
+    /* Footer */
+    .rodape {
+        padding: 20px 0;
+    }
+
+    /* Botão WhatsApp */
+    .whatsapp-btn-fixed img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
