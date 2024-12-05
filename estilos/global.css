@@ -1,0 +1,21 @@
+@import './header.css';
+@import './main.css';
+@import './footer.css';
+
+
+@import './produtos.css';
+
+
+@import './formulario.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --fonte: font-family: "Montserrat", sans-serif;
+}
+

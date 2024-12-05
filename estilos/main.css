@@ -1,0 +1,207 @@
+/*Main início*/
+
+.principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.conteudo-principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 400px;
+}
+
+
+.titulo-principal {
+    font-family: var(--fonte);
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 0 1em;
+}
+
+
+.utensilios {
+    width: 250px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.textos-principal {
+    font-family: var(--fonte);
+}
+
+/*Mapa*/
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mapa iframe {
+    width: 400px;
+    height: 250px;
+
+}
+
+.mapa p {
+    font-family: var(--fonte);
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+
+/* Benefícios */
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    font-family: var(--fonte);
+    list-style: none;
+    width: 40%;
+    vertical-align: top;
+    margin-top: 1rem;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "🌟";
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+
+/* Vídeo */
+.video iframe {
+    text-align: center;
+    height: 350px;
+    width: 100%;
+    margin: 2em auto;
+}
+
+
+/*Icone Whatsapp*/
+
+.whatsapp-btn-fixed {
+    position: fixed;
+    bottom: 20px;
+    /* Distância da parte inferior da tela */
+    right: 20px;
+    /* Distância da parte direita da tela */
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    /* Botão redondo */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 24px;
+    z-index: 1000;
+    /* Garantir que fique acima de outros elementos */
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn-fixed:hover {
+    background-color: #128C7E;
+}
+
+.whatsapp-btn-fixed img {
+    width: 50px;
+    /* Tamanho do ícone */
+    height: 50px;
+    border-radius: 50%;
+}
+
+/*Main Fim*/
+
+
+
+@media (min-width: 768px) {
+
+
+    /*Main*/
+
+
+    /*Benefícios*/
+
+    .conteudo-beneficios {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+    .conteudo-principal {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+    }
+
+    .mapa-conteudo {
+        width: 100%;
+        max-width: 1200px;        
+        text-align: center;
+    }
+
+    .mapa iframe {
+        width: 600px;
+        height: 450px;
+
+    }
+
+
+    /* Vídeo */
+    .video iframe {  
+        display: flex;  
+        justify-content: center;    
+        height: 450px;
+        width: 600px;
+       
+    }
+ }

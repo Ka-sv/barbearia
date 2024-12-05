@@ -1,0 +1,23 @@
+/* Produtos */
+.produtos li {
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.produtos h2 {
+    font-size: 24px;
+}
+
+
+@media (min-width: 768px) { 
+   
+    .conteudo-produtos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

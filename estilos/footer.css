@@ -1,0 +1,31 @@
+/* Footer */
+.rodape {
+    text-align: center;
+    background-color: #000000;
+    padding: 20px 0;
+}
+
+/* Botão WhatsApp */
+.whatsapp-btn-fixed img {
+    width: 40px;
+    height: 40px;
+}
+
+
+@media (min-width: 768px) {
+    
+/* Footer */
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.midias-footer {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+ }
